@@ -119,7 +119,7 @@
         /// True if this should be the default channel for send operations. Default is `false`.
         /// </param>
         /// <param name="proxyAddress">
-        /// The proxy Address to use when gateway is behind proxy, is used in reply on headers.
+        /// The address to which replies should be sent should the default channel not be publicly available, eg. when running behind a proxy.
         /// </param>
         public void AddReceiveChannel(string address, string type = "http", int maxConcurrency = 1, bool isDefault = false, string proxyAddress = null)
         {

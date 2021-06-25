@@ -33,12 +33,6 @@ namespace NServiceBus.Gateway.Channels
             };
         }
 
-        /// <summary>
-        /// The get public address (if exists ProxyAddress return it if not returns channel address).
-        /// </summary>
-        /// <returns>
-        /// The <see cref="string"/>.
-        /// </returns>
         internal string GetPublicAddress()
         {
             return !string.IsNullOrEmpty(ProxyAddress) ? ProxyAddress : Address;
